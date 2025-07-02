@@ -1,0 +1,115 @@
+/* Use a modern, easy-to-read font */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f7fa; /* light blue background for the page */
+}
+
+/* Style for the CTA banner section */
+.cta-banner {
+  background-image: url('img/cta-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #1e90a3; /* fallback color */
+  color: #ffffff; /* white text for contrast */
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: rgba(30, 144, 163, 0.8); /* semi-transparent overlay for readability */
+}
+.cta-banner p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Eye-catching CTA button */
+.cta-button {
+  display: inline-block;
+  background-color: #2ee6d6; /* bright teal */
+  color: #1e3d4f; /* dark blue text for contrast */
+  padding: 16px 36px;
+  font-size: 1.1em;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  /* Make the button stand out */
+  box-shadow: 0 2px 8px rgba(30, 61, 79, 0.15);
+  transition: background-color 0.2s;
+}
+
+/* Button hover effect */
+.cta-button:hover {
+  background-color: #23bfb8; /* slightly darker teal on hover */
+}
+
+/* Header styles */
+.site-header {
+  background-color: #1e90a3; /* same as banner */
+  color: #ffffff;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  margin-bottom: 0;
+}
+
+.site-header h2 {
+  margin: 0;
+  font-size: 1.7em;
+  letter-spacing: 2px;
+}
+
+.info-section {
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+  text-align: center;
+  /* Use table display for simple two-column layout */
+  display: table;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(30, 61, 79, 0.08);
+}
+
+.info-image,
+.info-text {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+  padding: 24px;
+}
+
+.info-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.info-text h3 {
+  color: #1e90a3;
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.info-text p {
+  color: #1e3d4f;
+  font-size: 1.1em;
+  margin-bottom: 0;
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 600px) {
+  .info-section {
+    display: block;
+  }
+  .info-image,
+  .info-text {
+    display: block;
+    width: 100%;
+    padding: 16px;
+  }
+}
